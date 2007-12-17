@@ -19,7 +19,6 @@ License:   Artistic
 Group:     Development/Perl
 URL:       http://www.exit1.org/Event-RPC
 SOURCE:    http://search.cpan.org//CPAN/authors/id/J/JR/JRED/Event-RPC-%version.tar.bz2
-Buildroot: %{_tmppath}/%{name}-%{version}-%(id -u -n)
 Buildarch: noarch
 BuildRequires: perl-devel
 BuildRequires: perl-Event
