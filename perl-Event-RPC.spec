@@ -1,17 +1,18 @@
 %define pkgname Event-RPC
-%define filelist %{pkgname}-%{version}-filelist
-%define NVR %{pkgname}-%{version}-%{release}
+%define filelist %{pkgname}-%{upstream_version}-filelist
+%define NVR %{pkgname}-%{upstream_version}-%{release}
 %define maketest 1
+%define upstream_version 1.01
 
 Name:      perl-Event-RPC
 Summary:   Event-RPC - Event based transparent Client/Server RPC framework
-Version:   1.01
+Version:   %perl_convert_version %upstream_version
 Release:   %mkrel 1
 License:   Artistic
 Group:     Development/Perl
 URL:       http://www.exit1.org/Event-RPC
-SOURCE:    http://search.cpan.org//CPAN/authors/id/J/JR/JRED/Event-RPC-%version.tar.gz
-Buildroot: %{_tmppath}/%{name}-%{version}-%(id -u -n)
+SOURCE:    http://search.cpan.org//CPAN/authors/id/J/JR/JRED/Event-RPC-%upstream_version.tar.gz
+Buildroot: %{_tmppath}/%{name}-%{upstream_version}-%(id -u -n)
 Buildarch: noarch
 BuildRequires: perl-devel
 BuildRequires: perl-Event
@@ -44,8 +45,8 @@ For details on implementing servers and clients please refer to the
 man pages of Event::RPC::Server and Event::RPC::Client.
 
 %prep
-%setup -q -n %{pkgname}-%{version} 
-chmod -R u+w %{_builddir}/%{pkgname}-%{version}
+%setup -q -n %{pkgname}-%{upstream_version} 
+chmod -R u+w %{_builddir}/%{pkgname}-%{upstream_version}
 
 %build
 grep -rsl '^#!.*perl' . |
