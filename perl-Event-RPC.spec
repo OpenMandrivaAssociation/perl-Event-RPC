@@ -7,7 +7,7 @@
 Name:      perl-Event-RPC
 Summary:   Event-RPC - Event based transparent Client/Server RPC framework
 Version:   %perl_convert_version %upstream_version
-Release:   %mkrel 1
+Release:   %mkrel 2
 License:   Artistic
 Group:     Development/Perl
 URL:       http://www.exit1.org/Event-RPC
