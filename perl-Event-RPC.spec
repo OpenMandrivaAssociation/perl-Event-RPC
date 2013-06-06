@@ -2,16 +2,15 @@
 %define filelist %{pkgname}-%{upstream_version}-filelist
 %define NVR %{pkgname}-%{upstream_version}-%{release}
 %define maketest 1
-%define upstream_version 1.01
-
+%define upstream_version 1.03
 Name:		perl-Event-RPC
 Summary:	Event-RPC - Event based transparent Client/Server RPC framework
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 1.03
+Release:	1
 License:	Artistic
 Group:		Development/Perl
 URL:		http://www.exit1.org/Event-RPC
-Source:		http://search.cpan.org//CPAN/authors/id/J/JR/JRED/Event-RPC-%{upstream_version}.tar.gz
+Source:		http://search.cpan.org//CPAN/authors/id/J/JR/JRED/Event-RPC-1.03.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Event)
@@ -126,4 +125,5 @@ find %{buildroot}%{_prefix}             \
 
 * Wed Aug 03 2005 Götz Waschk <waschk@mandriva.org> 0.84-1mdk
 - initial package
+
 
