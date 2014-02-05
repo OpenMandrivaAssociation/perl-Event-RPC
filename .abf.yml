@@ -1,4 +1,5 @@
 removed_sources:
   Event-RPC-1.01.tar.gz: 6da575eaf95c173eee062533e75868cfc5687d46
-sources:
   Event-RPC-1.03.tar.gz: d3bfd3467f1e7bb45453d30f77277d6a023756d3
+sources:
+  Event-RPC-1.05.tar.gz: 211dcc05e9f950046f7088cf5265d5113640e1e7
