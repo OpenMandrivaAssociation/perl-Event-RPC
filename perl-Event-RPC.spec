@@ -9,7 +9,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	3
 License:	Artistic
 Group:		Development/Perl
-URL:		http://www.exit1.org/Event-RPC
+URL:		https://www.exit1.org/Event-RPC
 Source:		http://search.cpan.org//CPAN/authors/id/J/JR/JRED/Event-RPC-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
